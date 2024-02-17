@@ -6,7 +6,7 @@ networks:
 volumes:
   pg_data:
     driver: local
-  pg_admin:
+  pg_admin: 
     driver: local
 
 services:
@@ -15,11 +15,11 @@ services:
     container_name: postgres
     ports:
       - 5432:5432
-    enviroment:
+    environment:
       POSTGRES_PASSWORD: postgres
     networks:
-      overlay
-    volume:
+      - overlay
+    volumes: 
       - pg_data:/var/lib/postgresql
 
   pgadmin:
@@ -27,11 +27,10 @@ services:
     container_name: pgadmin
     ports:
       - 80:80
-    enviroment:
+    environment:
       PGADMIN_DEFAULT_EMAIL: user@domain.com
       PGADMIN_DEFAULT_PASSWORD: password
     networks:
       - overlay
     volumes:
       - pg_admin:/var/lib/pgadmin
-      
