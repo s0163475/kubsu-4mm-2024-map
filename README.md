@@ -10,3 +10,12 @@ $ git add.
 $ git commit -m "message"
 $ git push
 ```
+```bash
+$ npm install
+$ npm run cowsay
+```
+
+```bash
+$ npm run lint
+$ npm run start
+```

@@ -1,6 +1,5 @@
 # IDE
-.idea
-.vscode
+**/.vscode/
 
-# NODE.JS
-.node_modules
+# NODEJS
+node_modules

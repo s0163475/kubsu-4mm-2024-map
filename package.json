@@ -9,12 +9,23 @@
     "start": "tsc typescript/test.ts && node typescript/test.js"
   },
   "dependencies": {
-    "cowsay": "1.6.0",
-    "leaflet": "1.9.4"
+    "cowsay": "^1.6.0",
+    "leaflet": "^1.9.4"
   },
   "devDependencies": {
-    "eslint": "8.56.0",
-    "typescript": "5.3.3",
-    "typescript-eslint": "7.0.1"
-  }
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^7.1.0"
+  },
+  "description": "Hello, World!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s0163475/kubsu-4mm-2024-map.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s0163475/kubsu-4mm-2024-map/issues"
+  },
+  "homepage": "https://github.com/s0163475/kubsu-4mm-2024-map#readme"
 }
